@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://bvuan4jum5ayj"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_gbi1x"]
+bounce = 0.91
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rqlfl"]
+albedo_color = Color(0.870588, 0.580392, 0.32549, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_nnq2w"]
+material = SubResource("StandardMaterial3D_rqlfl")
+top_radius = 1.0
+bottom_radius = 1.0
+height = 5.0
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_8nq1p"]
+height = 5.0
+radius = 1.0
+
+[node name="Peg" type="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.49695)
+physics_material_override = SubResource("PhysicsMaterial_gbi1x")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+mesh = SubResource("CylinderMesh_nnq2w")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+shape = SubResource("CylinderShape3D_8nq1p")

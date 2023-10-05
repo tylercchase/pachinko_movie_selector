@@ -1,0 +1,93 @@
+[gd_scene load_steps=14 format=3 uid="uid://5xt5iidwyab3"]
+
+[ext_resource type="PackedScene" uid="uid://dqghiqmnwecp8" path="res://src/ball/ball.tscn" id="1_uhnk5"]
+[ext_resource type="Script" path="res://src/ObstacleManager.gd" id="2_8cftc"]
+[ext_resource type="Script" path="res://free_look_camera.gd" id="3_1u1xg"]
+[ext_resource type="PackedScene" uid="uid://bvuan4jum5ayj" path="res://src/peg.tscn" id="3_83c1e"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7ih03"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_10jbo"]
+material = SubResource("StandardMaterial3D_7ih03")
+size = Vector2(100, 100)
+orientation = 2
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hc2q7"]
+size = Vector3(100, 100, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i3jfa"]
+transparency = 1
+albedo_color = Color(1, 1, 1, 0.0392157)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_udxvi"]
+material = SubResource("StandardMaterial3D_i3jfa")
+size = Vector2(100, 100)
+orientation = 2
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7jn71"]
+size = Vector3(1, 100, 10)
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_8fm0m"]
+
+[sub_resource type="Sky" id="Sky_8h72g"]
+sky_material = SubResource("ProceduralSkyMaterial_8fm0m")
+
+[sub_resource type="Environment" id="Environment_sdfif"]
+background_mode = 2
+sky = SubResource("Sky_8h72g")
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Ball" parent="." instance=ExtResource("1_uhnk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.48048, 49.3872, -1.79657)
+
+[node name="MovieManager" type="Node" parent="."]
+
+[node name="Box" type="Node3D" parent="."]
+
+[node name="BackWall" type="StaticBody3D" parent="Box"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Box/BackWall"]
+mesh = SubResource("PlaneMesh_10jbo")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box/BackWall"]
+shape = SubResource("BoxShape3D_hc2q7")
+
+[node name="FrontWall" type="StaticBody3D" parent="Box"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Box/FrontWall"]
+mesh = SubResource("PlaneMesh_udxvi")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box/FrontWall"]
+shape = SubResource("BoxShape3D_hc2q7")
+
+[node name="SideWallL" type="StaticBody3D" parent="Box"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box/SideWallL"]
+shape = SubResource("BoxShape3D_7jn71")
+
+[node name="SideWallR" type="StaticBody3D" parent="Box"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box/SideWallR"]
+shape = SubResource("BoxShape3D_7jn71")
+
+[node name="ObstacleManager" type="Node3D" parent="."]
+script = ExtResource("2_8cftc")
+peg_scene = ExtResource("3_83c1e")
+amount = 550
+rows = 35
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 9.92441)
+script = ExtResource("3_1u1xg")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_sdfif")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.897958, 0.44008, -1.37784e-08, -0.421439, 0.859923, 0.287962, 0.126727, -0.258578, 0.957642, 0, 0, 6.54488)
+shadow_enabled = true
