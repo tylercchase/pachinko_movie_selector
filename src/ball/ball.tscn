@@ -1,13 +1,24 @@
-[gd_scene load_steps=3 format=3 uid="uid://dqghiqmnwecp8"]
+[gd_scene load_steps=4 format=3 uid="uid://dqghiqmnwecp8"]
+
+[ext_resource type="Script" path="res://src/ball/ball.gd" id="1_ow4p6"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_vvl23"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_l4vur"]
 
 [node name="Ball" type="RigidBody3D"]
+script = ExtResource("1_ow4p6")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("SphereShape3D_vvl23")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("SphereMesh_l4vur")
+
+[node name="Node3D" type="Node3D" parent="."]
+
+[node name="MovieLabel" type="Label3D" parent="Node3D"]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.720266, 0)
+pixel_size = 0.0155
+text = "Test"

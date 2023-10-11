@@ -21,15 +21,14 @@ extends Node3D
 func _update_pegs():
 	for child in get_children():
 		child.queue_free()
-	
-
 
 	for idx in amount:
 		var peg : Node3D = peg_scene.instantiate()
 		add_child.call_deferred(peg)
 		await peg.tree_entered
+		var current_row = floor(idx / rows)
+		# odd or even row #
 		peg.set_global_position(Vector3(
-		-50 + floor(idx / rows) * (3.0 * 2),
+		-50 +  current_row * (3.0 * 2),
 		45 - idx % rows * 3.0,
 		-2.5))
-	print(amount)
