@@ -7,6 +7,7 @@ extends Node3D
 signal first_ball_changed
 
 var movie_balls = []
+var movie_names = []
 var lowest_ball = null
 
 func _ready():
@@ -14,12 +15,15 @@ func _ready():
 	var counter = 0
 	while not file.eof_reached():
 		var line = file.get_line()
+		movie_names.push_back(line)
+	movie_names.shuffle()
+	for movie in movie_names:
 		var new_ball = movie_ball_scene.instantiate()
-		new_ball.movie_name = line
+		new_ball.movie_name = movie
 		add_child(new_ball)
-		var spacing = counter % 50 * 0.5
+		var spacing = counter % 50 * 0.5 + (randf() * 2.0 - 1.0)
 		var row = floor(counter / 50)
-		new_ball.global_position = Vector3(-25 + spacing, 50 + row * 2, -2.5)
+		new_ball.global_position = Vector3(-25 + spacing, 50 + row * 2 + (randf() * 2.0 - 1.0), -2.5)
 		counter += 1
 		movie_balls.push_back(new_ball)
 

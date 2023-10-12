@@ -12,7 +12,7 @@ func _process(delta):
 	if not current_ball:
 		return
 	var tween = create_tween()
-	tween.tween_property(self, "global_position", current_ball.global_position + Vector3(0.0,0.0,20.0), 0.5)
+	tween.tween_property(self, "global_position", current_ball.global_position + Vector3(0.0,0.0,25.0), 0.5)
 
 func _on_first_ball_changed(ball):
 	current_ball = ball

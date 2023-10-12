@@ -1,10 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://dqghiqmnwecp8"]
+[gd_scene load_steps=5 format=3 uid="uid://dqghiqmnwecp8"]
 
 [ext_resource type="Script" path="res://src/ball/ball.gd" id="1_ow4p6"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_vvl23"]
 
-[sub_resource type="SphereMesh" id="SphereMesh_l4vur"]
+[sub_resource type="SphereMesh" id="SphereMesh_mrj0t"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ctir7"]
 
 [node name="Ball" type="RigidBody3D"]
 script = ExtResource("1_ow4p6")
@@ -13,12 +15,16 @@ script = ExtResource("1_ow4p6")
 shape = SubResource("SphereShape3D_vvl23")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-mesh = SubResource("SphereMesh_l4vur")
+mesh = SubResource("SphereMesh_mrj0t")
+surface_material_override/0 = SubResource("StandardMaterial3D_ctir7")
 
 [node name="Node3D" type="Node3D" parent="."]
 
 [node name="MovieLabel" type="Label3D" parent="Node3D"]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.720266, 0)
+layers = 3
+sorting_offset = 100000.0
 pixel_size = 0.0155
+billboard = 1
 text = "Test"

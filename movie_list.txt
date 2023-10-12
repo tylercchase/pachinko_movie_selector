@@ -1,19 +1,22 @@
 3 from Hell
 28 Days Later
+Absurd
 The Addams Family
 The Advent Calendar
+Aged
 Alien³
+All Fun and Games
 Alone in the Dark
 American Psycho
 Annihilation
 Antichrist
 The Apology
+Appendage
 Army of Darkness
 Army of Thieves
 Babezilla vs the Zombie Whorde
 Baphomet
 Barbarian
-"Batman: The Long Halloween, Part Two"
 Birdemic 2: The Resurrection
 Birdemic 3: Sea Eagle
 The Birds
@@ -37,11 +40,9 @@ The Brood
 Brooklyn 45
 Bunker
 Candy Corn
-Candyman
 Carnosaur
 The Cave
 Cerebrum
-Child's Play
 Child's Play 2
 Child's Play 3
 Children of the Corn
@@ -71,6 +72,7 @@ Daybreakers
 Dead Ringers
 Death Ship
 Deinfluencer
+Deliver Us
 Dementia 13
 The Devil's Advocate
 The Devil's Rain
@@ -79,12 +81,11 @@ Devilreaux
 Diary of the Dead
 Disquiet
 Doctor Sleep
-Doctor Strange in the Multiverse of Madness
 Don't Breathe 2
+Don't Look Away
 Don't Worry Darling
 Dr. Giggles
 Dracula 2000
-Dracula: Dead and Loving It
 Eden Lake
 Eraserhead
 Ernest Scared Stupid
@@ -107,18 +108,18 @@ The Forever Purge
 Frankenstein: The True Story
 Frenzy
 Fresh
-Friday the 13th
-Friday the 13th Part 2
-Friday the 13th Part III
 The Frighteners
 From Dusk Till Dawn
 The Funhouse
 Funny Games
 Funny Games
 Gacy
+Ghost Rider
+Ghost Story
 Ghosts of Mars
 The Girl Who Got Away
 Glass
+Glorious
 God Is a Bullet
 Godzilla vs. Biollante
 Godzilla vs. Destoroyah
@@ -140,6 +141,7 @@ Halloween: Resurrection
 Halloween: The Curse of Michael Myers
 Hardware
 Haunted High
+Haunted Mansion
 The Haunting
 The Haunting at Saint Joseph's
 The Haunting of Hell Hole Mine
@@ -149,7 +151,6 @@ Hellbender
 Hellboy
 Hellboy
 Hellboy II: The Golden Army
-Hellraiser
 Hellraiser III: Hell on Earth
 Henry: Portrait of a Serial Killer
 High Life
@@ -163,33 +164,28 @@ Hotel Transylvania 4: Transformania
 House of 1000 Corpses
 The House That Jack Built
 The Howling
+Howling II: ... Your Sister Is a Werewolf
 The Hunt
 I Spit on Your Grave
-In Search of Darkness
-In Search of Darkness: Part II
-In Search of Darkness: Part III
 In the Mouth of Madness
 Infinity Pool
 Inland Empire
 Insidious: The Red Door
-Interview with the Vampire: The Vampire Chronicles
 It Follows
+It Lives Inside
 It's Alive
 Jaws
 Jeepers Creepers
+Jeepers Creepers 2
 Jurassic Shark 3: Seavenge
 Kids vs. Aliens
 Killer Condom
 Killer Klowns from Outer Space
 The Kindred
-Kizumonogatari Part 1: Tekketsu
-Kizumonogatari Part 2: Nekketsu
-Kizumonogatari Part 3: Reiketsu
 Knock at the Cabin
 Lake Mungo
 Lake Placid vs. Anaconda
 Lamb
-Land of the Dead
 The Last House on the Left
 Last Night in Soho
 The Last Voyage of the Demeter
@@ -201,9 +197,13 @@ The Lighthouse
 Little Bone Lodge
 Little Monsters
 Lords of Chaos
+Maid Droid
 Maniac Cop 3: Badge of Silence
+The Mean One
 Meg 2: The Trench
+Megalodon: The Frenzy
 Men
+The Mill
 Mimic
 The Mist
 Monster Man
@@ -220,12 +220,13 @@ Night of the Comet
 Night of the Creeps
 Night of the Zombies
 Nightbooks
-No One Will Save You
 Nope
+The Nun II
 Old
 Older Gods
+Once Bitten
+Only Lovers Left Alive
 Open Water
-Organ Trail
 The Others
 Pacific Rim: Uprising
 The Pale Blue Eye
@@ -240,6 +241,7 @@ The Passenger
 Pearl
 The Perfection
 Perpetrator
+Pet Sematary: Bloodlines
 Piglady
 Piranha
 Piranha II: The Spawning
@@ -262,6 +264,7 @@ Puppet Master III: Toulon's Revenge
 The Purge
 The Purge: Anarchy
 The Purge: Election Year
+Queen of the Damned
 Quicksand
 Ready or Not
 Renfield
@@ -270,10 +273,13 @@ Resident Evil: Death Island
 Resident Evil: Welcome to Raccoon City
 Resurrected
 The Return of Godzilla
+A Return to Salem's Lot
 The Ring
 The Ring Two
 Ritual
 Rosemary's Baby
+Salem's Lot
+Salems Lot
 Scanners
 Scanners III: The Takeover
 The Scary of Sixty-First
@@ -294,12 +300,17 @@ Sinister
 Siren
 Slashening: The Final Beginning
 Slave Girls from Beyond Infinity
+Sleepaway Camp
+Sleepaway Camp II: Unhappy Campers
+Sleepaway Camp III: Teenage Wasteland
 Sleepy Hollow
 Slotherhouse
 Something Wicked This Way Comes
-Sorority House Massacre
+Sorority Babes in the Slimeball Bowl-O-Rama
+A Southern Haunting
 Species
 Species II
+Spellbinder
 Spiral
 Spirit Halloween
 Split
@@ -321,6 +332,7 @@ They/Them
 The Thing
 Thir13en Ghosts
 Tombs of the Blind Dead
+Totally Killer
 The Toxic Avenger
 The Toxic Avenger Part II
 The Toxic Avenger Part III: The Last Temptation of Toxie
@@ -336,12 +348,15 @@ Twin Peaks: Fire Walk with Me
 The Unborn
 The Unborn
 Uncle Sam
+Underworld: Awakening
+Underworld: Blood Wars
 Unfriended
 Unseen
 Upgrade
 V/H/S
 V/H/S Viral
 V/H/S/2
+V/H/S/85
 V/H/S/94
 V/H/S/99
 Vampire's Kiss
@@ -350,6 +365,7 @@ Van Helsing
 The Vault of Horror
 VFW
 Village of the Damned
+The Vineyard
 The Visitor
 Voices from Beyond
 The Void
@@ -358,6 +374,9 @@ Waxwork
 What We Do in the Shadows
 When Good Ghouls Go Bad
 The Witch
+The Wizard of Gore
 Would You Rather
 The Wrath of Becky
+X-Ray
 Zombeavers
+Zombies
