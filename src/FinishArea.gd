@@ -12,4 +12,4 @@ func _ready():
 func _on_body_entered(body):
 	if not body is MovieBall:
 		return
-	movie_selected.emit(body.movie_name)
+	movie_selected.emit(body.movie_name, body.cool_color)

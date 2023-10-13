@@ -9,9 +9,10 @@ func _ready():
 	finish_area.movie_selected.connect(_on_movie_selected)
 	visible = false
 
-func _on_movie_selected(movie_name):
+func _on_movie_selected(movie_name, color):
 	visible = true
 	if movie_selected:
 		return
 	%MovieNameLabel.text = movie_name
+	%WinSphere.modulate = color
 	movie_selected = true

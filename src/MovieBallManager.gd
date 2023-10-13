@@ -23,7 +23,7 @@ func _ready():
 		add_child(new_ball)
 		var spacing = counter % 50 * 0.5 + (randf() * 2.0 - 1.0)
 		var row = floor(counter / 50)
-		new_ball.global_position = Vector3(-25 + spacing, 50 + row * 2 + (randf() * 2.0 - 1.0), -2.5)
+		new_ball.global_position = Vector3(-25 + spacing * 2, 50 + row * 2 + (randf() * 2.0 - 1.0), -2.5)
 		counter += 1
 		movie_balls.push_back(new_ball)
 
